@@ -1,0 +1,25 @@
+{% extends "blog/base.html"%}
+{% block content %}
+{% load static %}
+	{% for post in posts %}
+		<main role="main" class="container" style="margin-top:20px;">
+			<div class="row">
+			<div class="col-md-8">
+				<article class="media content-section">
+				  <div class="media-body">
+				    <div class="article-metadata">
+				      <a class="me-auto" href="">{{ post.author }}</a>
+				      <small class="text-muted">{{ post.date_posted }}</small>
+				    </div>
+				    <h2><a class="article-title" href="">{{ post.title }}</a></h2>
+				    <p class="article-content">{{ post.content }}</p>
+				  </div>
+				</article>
+		 		<div class="card" style="margin-bottom: auto;">
+    				<img class="img" src="{%static 'blog/images/RTX.png'%}"alt="">
+    			</div>
+			</div>  
+			</div>
+		</main>
+	{%endfor%}
+{% endblock %}
