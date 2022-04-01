@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Post, Products
+from .models import Post, Products,Login
 
 posts = [
 {
@@ -26,3 +26,10 @@ def products(request):
 			'products' : Products.objects.all()
 		}
 		return render(request, 'blog/products.html', context)
+
+def login(request):
+		context = {
+			'login' : Login.objects.all()
+		}
+		return render(request, 'blog/login.html', context)
+

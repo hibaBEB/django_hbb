@@ -15,3 +15,7 @@ class Post(models.Model):
 class Products(models.Model):
 	p_name = models.CharField(max_length=35)
 	p_descript = models.TextField(max_length=200)
+
+class Login(models.Model):
+	p_name = models.CharField(max_length=35)
+	p_descript = models.TextField(max_length=200)
