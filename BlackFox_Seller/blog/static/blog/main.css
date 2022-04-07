@@ -108,7 +108,7 @@ a.article-title{
   overflow : hidden;
   position: relative;
   border-radius: 5%;
-  felx :1 1 150px;
+  /* felx :1 1 150px; */
 
 }
 .card >img{
